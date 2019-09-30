@@ -1,0 +1,15 @@
+
+msquid:S3400&"9Remove this method and declare a constant for this value.(ŒÒÌé8âÑõµ¨-HÁRMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ğ¨ƒçıÿÿÿÿ8âÑõµ¨-HÂRMAJORZ
+CODE_SMELL
+_squid:S1172$"+Remove this unused method parameter "name".(ñı¦Å8ĞØª-HÃRMAJORZ
+CODE_SMELL
+˜squid:UselessImportCheck"WRemove this unused import 'org.springframework.cloud.client.loadbalancer.LoadBalanced'.(Éâ¦‡8ñ‰¶¨-HÄRMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(û§Ûæ8âÑõµ¨-HÅRMAJORZ
+CODE_SMELL
+‰squid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8ñ‰¶¨-HÆRMINORZ
+CODE_SMELL

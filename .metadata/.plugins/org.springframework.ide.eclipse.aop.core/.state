@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="LoginService"/>
+<aop-project name="MyChat"/>
+<aop-project name="ZuulApiGateway"/>
+<aop-project name="spring-config-client"/>
+<aop-project name="eureka-server"/>
+<aop-project name="config"/>
+<aop-project name="apiGateway"/>
+</aop-reference-model>

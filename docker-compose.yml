@@ -1,0 +1,65 @@
+version: "2.1"
+services:
+
+  config:
+    image: biswapriya/config
+    restart: always
+    container_name: config
+    
+  eureka-server:
+    # replace username/repo:tag with your name and image details
+    image: biswapriya/eureka_server
+    restart: always
+    container_name: eureka-server
+    depends_on:
+        config:
+            condition: service_healthy
+    
+    ports:
+      - 8761:8761
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+        
+  apiGateway:
+    # replace username/repo:tag with your name and image details
+    image: biswapriya/apigateway
+    restart: always
+    container_name: gateway
+    depends_on:
+        config:
+            condition: service_healthy
+            
+    ports:
+      - 8010:8010
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+        
+  LoginService:
+    image: biswapriya/loginservice
+    restart: always
+    depends_on:
+      config:
+       condition: service_healthy
+    ports:
+      - 8012:8012
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+        
+  MyChat:
+    image: biswapriya/mychat
+    restart: always
+    depends_on:
+        config:
+            condition: service_healthy
+    ports:
+      - 8011:8011
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"

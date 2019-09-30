@@ -1,0 +1,51 @@
+server:
+  port: 8080 
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000 
+  eureka:
+    enabled: false
+  
+eureka:        
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+    fetch-registry: true
+    register-with-eureka: true
+  
+spring:   
+  application:
+    name: gateway-service
+    
+    
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+   
+  routes:
+      employee-service:
+        path: /employee/**
+        url: http://localhost:8012
+        stripPrefix: false
+        sensitiveHeaders:
+        
+
+        

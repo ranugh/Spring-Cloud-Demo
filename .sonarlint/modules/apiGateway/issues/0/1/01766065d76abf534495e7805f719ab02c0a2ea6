@@ -1,0 +1,5 @@
+
+šsquid:UselessImportCheck"TRemove this unused import 'org.springframework.boot.web.client.RestTemplateBuilder'.(—«ñûÿÿÿÿ8§¨´¨-H¶RMINORZ
+CODE_SMELL
+squid:UselessImportCheck	"XRemove this unused import 'org.springframework.cloud.netflix.eureka.EnableEurekaClient'.(´÷ÎÉüÿÿÿÿ8—–àï©-H·RMINORZ
+CODE_SMELL

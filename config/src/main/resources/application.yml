@@ -1,0 +1,19 @@
+server:
+  port: 8888
+ 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://bitbucket.org/biswapriyaK/config-server/src/master/
+          username: biswapriyaK
+          password: Biswa@04021992
+          
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka

@@ -1,0 +1,5 @@
+
+squid:UselessImportCheck"XRemove this unused import 'org.springframework.cloud.netflix.eureka.EnableEurekaClient'.(´÷ÎÉüÿÿÿÿ8¦÷˜³¨-HíRMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëí¬úÿÿÿÿHîRMINORZ
+CODE_SMELL
